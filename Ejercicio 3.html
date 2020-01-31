@@ -1,0 +1,11 @@
+<script>
+    function printUnoReturnOtro(array){
+        console.log(array[array.length-2])
+        for(var i=0; i<array.length; i++){
+            if(i%2==1){
+                return array[i]
+            }
+        }
+    }
+    console.log(printUnoReturnOtro([-1,1,9,3,2,-2])) // prints 1 and then returns 2
+</script>

@@ -1,0 +1,11 @@
+<script>
+    function duplicar(array){
+        z = []
+        for(var i=0; i<array.length; i++){
+            array[i]=array[i]*2
+            z.push(array[i])
+        }
+        return z
+    }
+    console.log(duplicar([1,2,3])) // should log [2,4,6] withput changing the original array
+</script>

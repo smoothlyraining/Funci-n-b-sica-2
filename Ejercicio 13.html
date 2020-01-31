@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <script>
+        function cambiaHaciaElCentro(array){
+            temp=array[0]
+            array[0]=array[array.length-1]
+            array[array.length-1]=temp
+            temp=array[2]
+            array[2]=array[array.length-2]
+            array[array.length-2]=temp
+            return array
+        }
+        console.log(cambiaHaciaElCentro([true, 42, "Ada", 2, "pizza"])) // cambia el array a [“pizza", 42, “Ada”, true].
+</script>
+</html>
